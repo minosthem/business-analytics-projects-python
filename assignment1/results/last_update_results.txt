@@ -1,0 +1,81 @@
+"C:\Program Files\Python37\python.exe" "C:/Users/Konstantinos/Desktop/Tilburg University/Assignment_1/business-analytics-projects-python/assignment1/main.py"
+Loading data from csv
+Creating dictionary with datasets per label
+Find most and least similar to 5 digit
+[('0_5', 1.0), ('1_5', 0.9047619047619048), ('2_5', 0.7333333333333333), ('3_5', 0.7222222222222222), ('4_5', 0.7619047619047619), ('5_6', 0.8235294117647058), ('5_7', 0.9090909090909091), ('5_8', 1.0), ('5_9', 0.8333333333333334)]
+Most similar to 5: 3_5, with pair accuracy 0.7222222222222222
+Least similar to 5: 0_5, with pair accuracy 1.0
+Min / max pair evals in the entire classification set: 0.7222222222222222 1.0
+Executing majority votes
+Majority voting accuracy: 0.77
+Label: 0 : majority voting accuracy: 1.0
+Label: 1 : majority voting accuracy: 0.9285714285714286
+Label: 2 : majority voting accuracy: 0.625
+Label: 3 : majority voting accuracy: 0.9090909090909091
+Label: 4 : majority voting accuracy: 1.0
+Label: 5 : majority voting accuracy: 0.2857142857142857
+Label: 6 : majority voting accuracy: 0.7
+Label: 7 : majority voting accuracy: 0.8
+Label: 8 : majority voting accuracy: 0.5
+Label: 9 : majority voting accuracy: 0.45454545454545453
+shape of one-hot labels & metafeatures: (100, 10) (100, 45)
+Find best ANN with majority votes input
+Examining hidden layer size: 5 on 10 trainval folds
+Running mean of data: [0.5, 0.3, 0.5, 0.3, 0.5, 0.3, 0.1, 0.4, 0.4, 0.6] = 0.39
+Examining hidden layer size: 10 on 10 trainval folds
+Running mean of data: [0.8, 0.5, 0.6, 0.3, 0.5, 0.6, 0.1, 0.6, 0.5, 0.7] = 0.52
+Examining hidden layer size: 15 on 10 trainval folds
+Running mean of data: [0.6, 0.5, 0.7, 0.6, 0.3, 0.1, 0.3, 0.4, 0.5, 0.4] = 0.44
+Examining hidden layer size: 20 on 10 trainval folds
+Running mean of data: [0.6, 0.8, 0.8, 0.5, 0.5, 0.2, 0.4, 0.4, 0.5, 0.9] = 0.56
+Best size for ANN 20
+Accuracy for the best performing ANN 0.56
+Running encoders
+Accuracy for Input Layer 784 is 0.33
+Running encoders to 200
+Epoch 5, batch 0, loss 7081.229
+Epoch 10, batch 0, loss 7020.819
+Accuracy for Hidden Layer 200 is 0.15
+Running encoders to 45
+Epoch 5, batch 0, loss 2497026.250
+Epoch 10, batch 0, loss 2497026.250
+Accuracy for Hidden Layer 45 is 0.14
+PCA with ANN from q4 has accuracy 0.36 
+Random projection with ANN from q4 has accuracy 0.27 
+
+
+[('0_5', 0.9946581196581197), ('1_5', 0.8648248643315244), ('2_5', 0.8206860706860707), ('3_5', 0.704521556256572), ('4_5', 0.7908217716115261), ('5_6', 0.8356756756756757), ('5_7', 0.8963541666666667), ('5_8', 0.8467309753483387), ('5_9', 0.7585481325618095)]
+Most similar to 5: 3_5, with pair accuracy 0.704521556256572 
+Least similar to 5: 0_5, with pair accuracy 0.9946581196581197 
+Min / max pair evals in the entire classification set: 0.7222222222222222 1.0
+Executing majority votes
+Majority voting accuracy: 0.6858
+Label: 0 : majority voting accuracy: 0.95
+Label: 1 : majority voting accuracy: 0.9612334801762115
+Label: 2 : majority voting accuracy: 0.6317829457364341
+Label: 3 : majority voting accuracy: 0.8603960396039604
+Label: 4 : majority voting accuracy: 0.8991853360488798
+Label: 5 : majority voting accuracy: 0.3183856502242152
+Label: 6 : majority voting accuracy: 0.7849686847599165
+Label: 7 : majority voting accuracy: 0.8044747081712063
+Label: 8 : majority voting accuracy: 0.2782340862422998
+Label: 9 : majority voting accuracy: 0.29534192269573833
+shape of one-hot labels & metafeatures: (10000, 10) (10000, 45)
+Find best ANN with majority votes input
+Best size for ANN 20
+Find best ANN with majority votes input
+Examining hidden layer size: 5 on 10 trainval folds
+Running mean of data: [0.658, 0.612, 0.638, 0.674, 0.658, 0.734, 0.724, 0.73, 0.742, 0.705] = 0.69
+Examining hidden layer size: 10 on 10 trainval folds
+Running mean of data: [0.705, 0.667, 0.693, 0.728, 0.698, 0.767, 0.78, 0.775, 0.8, 0.74] = 0.74
+Examining hidden layer size: 15 on 10 trainval folds
+Running mean of data: [0.72, 0.668, 0.716, 0.713, 0.723, 0.792, 0.778, 0.767, 0.835, 0.769] = 0.75
+Examining hidden layer size: 20 on 10 trainval folds
+Running mean of data: [0.717, 0.702, 0.713, 0.725, 0.726, 0.83, 0.79, 0.778, 0.844, 0.79] = 0.76
+Accuracy for the best performing ANN 0.7615000000000001
+Running encoders
+Accuracy for Input Layer 784 is 0.9406
+Accuracy for Hidden Layer 200 is 0.7005
+Accuracy for Hidden Layer 45 is 0.1135
+PCA with ANN from q4 has accuracy 0.9299
+Random projection with ANN from q4 has accuracy 0.9287
